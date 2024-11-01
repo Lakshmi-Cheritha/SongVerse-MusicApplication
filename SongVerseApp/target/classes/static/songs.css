@@ -1,0 +1,79 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f2f2f2;
+	background-image:
+		url('https://t3.ftcdn.net/jpg/02/23/60/54/360_F_223605406_nGKtPp42ZRx4ZxvrcVeT3Ek6V5Uw4ETh.jpg');
+	background-size: 100%;
+}
+
+form {
+	width: 30%;
+	margin: 0 auto;
+	padding: 10px;
+	color : #ff80ff;
+	
+	height: 400px;
+}
+
+label {
+	display: block;
+	color: #ff8000;
+	margin-bottom: 2px;
+	font-weight: bolder;
+}
+
+input[type="text"] {
+	width: 80%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    width: 30%;
+    padding: 10px;
+    background-color: #ff4fd8;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #e600a1;
+}
+
+.song-item {
+	margin-bottom: 5px;
+}
+
+.song-item input[type="checkbox"] {
+	margin-right: 5px;
+}
+
+h2 {
+	font-size: 30px;
+	border-style: ridge;
+
+	color: #ffff80;
+	text-align: center;
+	/* width: 400px; */
+	height: 50px;
+	
+	font-family: "Segoe UI", Arial, sans-serif;
+	
+	transition: margin-left 0.5s;
+	/* Add transition effect to margin-left */
+	cursor: pointer; /* Change cursor to pointer on hover */
+	margin-bottom: 20px;
+	transition: 0.3s ease;
+}
+
+h2:hover {
+	color: #ff6600; /* Change color on hover */
+}

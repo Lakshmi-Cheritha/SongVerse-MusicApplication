@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CUSTOMER HOME</title>
+<!-- Navigation bar -->
+<div class="navbar">
+	<a th:href="@{/home}">Home</a> <a th:href="@{/about}">About</a> <a
+		th:href="@{/contact}">Contact</a> <a href="login">Login</a> <a
+		href="registration">Register</a> <a th:href="@{/logout}">Logout</a>
+</div>
+</head>
+
+<link rel=stylesheet href="displayplaylist.css">
+<link rel=stylesheet href="paragraph.css">
+<link rel=stylesheet href="bar.css">
+<link rel=stylesheet href="contact.css">
+<body>
+
+	<br>
+	<br>
+	<div th:unless="${ispremium}" class="non-premium">
+		<form action="pay">
+
+
+			<div class="premimum">
+				<input type="submit" value="GET PREMIMUM">
+				<div class="container">
+				<h5>Why Premium ?</h5>
+				<div class="para">
+				<p>👉 Ad-free jamming: Say goodbye to those pesky interruptions and hello to uninterrupted music bliss</p>
+				<p>👉 Endless playlists: Dive into a musical rabbit hole and emerge with new favorites every time!</p>
+				<p>👉 Skip the shuffle and curate your perfect playlists effortlessly - premium puts the power of personalized music discovery right in your pocket!</p>
+				<p></p>
+				</div>
+			</div>
+		</form>
+		<br></br>
+		<div class="logout">
+			<form action="logout" method="get">
+				<input type="submit" value="LOG OUT">
+		</div>
+		</form>
+	</div>
+	<div th:if="${ispremium}" class="premium">
+		<table border="1">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Artist</th>
+					<th>Genere</th>
+					<th>Play</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="song:${songs}">
+					<td th:text="${song.name}"></td>
+					<td th:text="${song.artist}"></tdth:text="${song.name}">
+					<td th:text="${song.genre}"></td>
+					<td><audio controls>
+							<source th:src="${song.link}">
+						</audio></td>
+				</tr>
+			</tbody>
+		</table>
+		
+			<br></br>
+		<form action="viewplaylists">
+			<input type="submit" value="VIEW PLAYLIST">
+		</form>
+	</div>
+	
+		
+	<!-- Footer bar -->
+	<div class="footer">
+		<p>&copy; 2024 SongVerse Music Streaming App. All rights reserved.</p>
+	</div>
+</body>
+</html>

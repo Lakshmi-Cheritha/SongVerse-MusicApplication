@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+ <head>
+ <link rel=stylesheet href="displayplaylist.css">
+  <link rel=stylesheet th:href="@{/bar.css}">
+  <title>
+   List of songs
+  </title>
+ </head>
+  <!-- Navigation bar -->
+    <div class="navbar">
+<a th:href="@{/home}">Home</a>  
+<a th:href="@{/about}">About</a>
+<a th:href="@{/contact}">Contact</a>
+<a href="login">Login</a>
+<a href="registration">Register</a>
+<a th:href="@{/logout}">Logout</a>
+</div>
+ <body>
+  <table border="1">
+   <thead>
+    <tr>
+     <th>Id</th>
+     <th>Name</th>
+     <th>Song Play</th>
+     
+     
+    </tr>
+    </thead>
+   <tbody>
+            
+            <tr th:each="playlist: ${allplaylist}">
+                <td th:text="${playlist.id}"></td>
+                <td th:text="${playlist.name}"></td>
+
+                <td>
+                    <ul>
+                        
+                        <li th:each="song : ${playlist.songs}">
+                           
+                            <span th:text="${song.name}"></span>
+                            <audio controls>
+     <source th:src="${song.link}">
+    </audio>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+  </table>
+    <!-- Footer bar -->
+    <div class="footer">
+        <p>&copy; 2024 SongVerse Music Streaming App. All rights reserved.</p>
+    </div>
+ </body>
+ </html>

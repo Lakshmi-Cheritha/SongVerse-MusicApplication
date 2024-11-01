@@ -1,0 +1,26 @@
+h5 {
+	font-weight: bold; /* Change font weight as desired */
+	text-transform: uppercase; /* Change text transform as desired */
+	color: #1A5276;
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+h5:hover {
+	color: #ff4500; /* Change color on hover as desired */
+	cursor: pointer; /* Change cursor style on hover as desired */
+}
+
+.para {
+	color: #666; /* Change color as desired */
+	font-size: 1em; /* Change font size as desired */
+	line-height: 1.5; /* Adjust line height as desired */
+	margin-bottom: 20px; /* Adjust margin as desired */
+	text-align: left;
+	background-color: #D6EAF8;
+	border-radius: 10px;
+	padding: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	list-style-type: square; /* Use disc for filled circle bullet points */
+	margin-left: 20px; /* Adjust margin as desired */
+}

@@ -1,0 +1,42 @@
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.contact-section {
+
+	border-radius: 10px;
+	padding: 20px;
+	margin-top: 50px;
+	
+}
+body{
+	background-image:
+		url('https://t3.ftcdn.net/jpg/02/23/60/54/360_F_223605406_nGKtPp42ZRx4ZxvrcVeT3Ek6V5Uw4ETh.jpg');
+	background-size: 100%;
+}
+
+.contact-section h2 {
+	color: #ff00ff;
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+.contact-section p {
+	color:white;
+	font-size: 16px;
+	margin-bottom: 20px;
+	    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-section ul {
+	list-style: none;
+	padding: 0;
+}
+
+.contact-section li {
+	color:white;
+	font-size: 16px;
+	margin-bottom: 10px;
+}

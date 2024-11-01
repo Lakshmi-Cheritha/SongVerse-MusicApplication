@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LOGIN PAGE</title>
+<link rel=stylesheet th:href="@{/index.css}">
+<link rel=stylesheet th:href="@{/bar.css}">
+</head>
+<!-- Navigation bar -->
+<div class="navbar">
+	<a th:href="@{/home}">Home</a> <a th:href="@{/about}">About</a> <a
+		th:href="@{/contact}">Contact</a> <a href="login">Login</a> <a
+		href="registration">Register</a> <a th:href="@{/logout}">Logout</a>
+
+</div>
+<body>
+	<h2>User Login</h2>
+	<form action="validate" method="post">
+		<label>Email: </label> <input type="email" name="email"> <br>
+		<br> <label>Password: </label> <input type="password"
+			name="password"> <br> <br> <input type="submit"
+			value="Login">
+	</form>
+	<!-- Footer bar -->
+	<div class="footer">
+		<p>&copy; 2024 SongVerse Music Streaming App. All rights reserved.</p>
+	</div>
+</body>
+</html>

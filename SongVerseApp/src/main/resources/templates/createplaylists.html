@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<title>CREATE PLAY LIST</title>
+<link rel=stylesheet th:href="@{/bar.css}">
+<link rel=stylesheet th:href="@{/songs.css}">
+<!-- Navigation bar -->
+<div class="navbar">
+	<a th:href="@{/home}">Home</a> <a th:href="@{/about}">About</a> <a
+		th:href="@{/contact}">Contact</a> <a href="login">Login</a> <a
+		href="registration">Register</a> <a th:href="@{/logout}">Logout</a>
+</div>
+</head>
+
+<h2>Create Playlist 🎧</h2>
+<body>
+	<form action="addplaylist" method="post">
+		<label>PlayList Name:</label> <input type="text" name="name">
+		<br>
+		<div th:each="song:${songs}">
+			<input type="checkbox" th:name="songs" th:value="${song.id}" th:text="${song.name}">
+			
+		</div>
+		<br>
+		<input type="submit" value="ADD PLAYLIST">
+	</form>
+
+	<!-- Footer bar -->
+	<div class="footer">
+		<p>&copy; 2024 SongVerse Music Streaming App. All rights reserved.</p>
+	</div>
+
+</body>
+
+
+</html>

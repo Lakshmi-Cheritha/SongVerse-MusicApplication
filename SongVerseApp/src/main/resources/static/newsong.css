@@ -1,0 +1,30 @@
+body {
+	font-family: Arial, sans-serif;
+	background-image:
+		url('https://t3.ftcdn.net/jpg/02/23/60/54/360_F_223605406_nGKtPp42ZRx4ZxvrcVeT3Ek6V5Uw4ETh.jpg');
+	margin: 0;
+	padding: 0;
+}
+
+form {
+	text-align: center;
+}
+
+input[type="text"], input[type="submit"] {
+	padding: 10px;
+	margin: 5px;
+	border-radius: 10px;
+	border: none;
+}
+
+input[type="submit"] {
+    width: 20%;
+    padding: 10px;
+    background-color: #ff4fd8;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}

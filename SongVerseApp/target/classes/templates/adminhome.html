@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ADMIN HOME</title>
+<link rel=stylesheet th:href="@{/admin.css}">
+<link rel=stylesheet th:href="@{/bar.css}">
+</head>
+<!-- Navigation bar -->
+<div class="navbar">
+	<a th:href="@{/home}">Home</a> <a th:href="@{/about}">About</a> <a
+		th:href="@{/contact}">Contact</a> <a href="login">Login</a> <a
+		href="registration">Register</a> <a th:href="@{/logout}">Logout</a>
+
+</div>
+
+<body>
+	<h2>Admin Home</h2>
+	<div class="buttons-container">
+		<form action="newsong">
+			<input type="submit" value="ADD SONGS">
+		</form>
+		<br></br>
+		<form action="viewsongs">
+			<input type="submit" value="VIEW SONGS">
+		</form>
+		
+		<form action="createplaylists">
+			<input type="submit" value="CREATE PLAYLIST">
+		</form>
+		<form action="viewplaylists">
+			<input type="submit" value="VIEW PLAYLIST">
+		</form>
+	</div>
+	<!-- Footer bar -->
+	<div class="footer">
+		<p>&copy; 2024 SongVerse Music Streaming App. All rights reserved.</p>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

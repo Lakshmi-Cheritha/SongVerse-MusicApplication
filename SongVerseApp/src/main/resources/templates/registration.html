@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>REGISTRATION</title>
+<link rel=stylesheet th:href="@{/index.css}">
+<link rel=stylesheet th:href="@{/bar.css}">
+<!-- Navigation bar -->
+<div class="navbar">
+	<a th:href="@{/home}">Home</a> <a th:href="@{/about}">About</a> <a
+		th:href="@{/contact}">Contact</a> <a href="login">Login</a> <a
+		href="registration">Register</a> <a th:href="@{/logout}">Logout</a>
+</div>
+</head>
+<body>
+	<h2>Registration Form</h2>
+	<div class="container">
+		<form action="register" method="post">
+		
+			<label>Username: </label> <input type="text" name="username">
+			 <br> <label>Email: </label> <input type="email"
+				name="email"> <br>  <label>Password: </label>
+			<input type="password" name="password"> <br> <br> <label>Gender:
+			</label> <input type="radio" name="gender" value="male"> Male <input
+				type="radio" name="gender" value="female"> Female <input
+				type="radio" name="gender" value="female"> Other <br><br>
+			<label>Role:</label> <input type="radio" name="role" value="admin">
+			Admin <input type="radio" name="role" value="customer">
+			Customer <br><br>
+			 <label>Address: </label>
+			<textarea name="address"></textarea>
+			<br>
+			<br> <input type="submit" value="Register">
+		</form>
+	</div>
+	<!-- Footer bar -->
+	<div class="footer">
+		<p>&copy; 2024 SongVerse Music Streaming App. All rights reserved.</p>
+	</div>
+</body>
+</html>

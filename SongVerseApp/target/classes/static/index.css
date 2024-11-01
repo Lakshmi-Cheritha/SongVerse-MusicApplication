@@ -1,0 +1,129 @@
+body {
+	background-color: #FEF9E7;
+	background-image:
+		url('https://t3.ftcdn.net/jpg/02/23/60/54/360_F_223605406_nGKtPp42ZRx4ZxvrcVeT3Ek6V5Uw4ETh.jpg');
+	background-size: 100%;
+	
+}
+
+div {
+	text-align: center;
+}
+
+h2 {
+	font-size: 30px;
+	border-style: ridge;
+
+	color: #ffff80;
+	text-align: center;
+	/* width: 400px; */
+	height: 50px;
+	
+	font-family: "Segoe UI", Arial, sans-serif;
+	
+	transition: margin-left 0.5s;
+	/* Add transition effect to margin-left */
+	cursor: pointer; /* Change cursor to pointer on hover */
+	margin-bottom: 20px;
+	transition: 0.3s ease;
+}
+
+h2:hover {
+	color: #ff6600; /* Change color on hover */
+}
+
+/* .button-container button {
+    padding: 10px 20px;
+    background-color:#CC0066 ;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;	
+    transition: background-color 0.3s ease; transition effect
+}
+.button-container button:hover {
+    background-color: #0056b3; change background color on hover
+     
+} */
+.app-info {
+	color: red;
+	
+	font-family: monospace;
+	border-radius: 10px;
+	padding: 10px;
+	font-size: 22px;
+}
+
+
+form {
+	color:#ff80c0;
+	text-align: center;
+	/* width: 400px; */
+	padding: 20px;
+	
+	height: 100px;
+}
+
+p {
+	color: "#2E4053";
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.greet {
+	text-align: center;
+	margin-top: 50px;
+
+}
+
+.greet h5 {
+	font-size: 30px;
+	color: #CC33FF;
+	margin-bottom: 20px;
+}
+
+h6 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color:white;
+	padding: 10px;
+	
+}
+
+
+label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+
+textarea {
+    width: 25%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+input[type="radio"] {
+    margin: 0 10px;
+}
+
+input[type="submit"] {
+    width: 20%;
+    padding: 10px;
+    background-color: #ff4fd8;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #e600a1;
+}
+
