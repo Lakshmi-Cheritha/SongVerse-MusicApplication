@@ -38,7 +38,7 @@
 ![image](https://github.com/user-attachments/assets/d3a22369-5b2e-4a7a-accf-6d5414260c10)
 
 **Create Playlist Page**
-![image](https://github.com/user-attachments/assets/d325fe9b-a417-413a-8939-400d4312f5d5)
+![image](https://github.com/user-attachments/assets/0294706b-f41d-46b4-84ba-fe0034bae801)
 
 **View Playlist Page**
 ![image](https://github.com/user-attachments/assets/41d10b54-b6cd-4df0-8707-c850d59d70aa)
