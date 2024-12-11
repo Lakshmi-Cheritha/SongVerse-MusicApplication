@@ -43,6 +43,12 @@
 **View Playlist Page**
 ![image](https://github.com/user-attachments/assets/41d10b54-b6cd-4df0-8707-c850d59d70aa)
 
+**Customer Home Page (Without Subscription)**
+![image](https://github.com/user-attachments/assets/f3946528-48af-4284-aadd-fb129283b1b8)
+
+**Customer Home Page (With Subscription)**
+![image](https://github.com/user-attachments/assets/30f03b86-0969-49c3-bc25-97511227ddc7)
+
 **Payment Page**
 ![image](https://github.com/user-attachments/assets/12b53177-8dfe-45e5-b091-44aeeb136980)
 
